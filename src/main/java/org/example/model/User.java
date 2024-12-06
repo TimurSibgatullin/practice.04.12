@@ -1,5 +1,8 @@
 package org.example.model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class User {
     private String nickname;
     private String name;
@@ -18,7 +21,6 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-}
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
@@ -49,4 +51,3 @@ public class User {
     }
 
 }
-

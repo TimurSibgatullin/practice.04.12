@@ -1,5 +1,8 @@
 package org.example.model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class User {
     private String nickname;
     private String name;
@@ -46,5 +49,5 @@ public class User {
     public String getPassword() {
         return password;
     }
-}
 
+}

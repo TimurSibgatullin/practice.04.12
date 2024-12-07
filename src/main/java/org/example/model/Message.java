@@ -1,19 +1,21 @@
 package org.example.model;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class Message {
-    private String sender = new User;
-    private String recipient = new User;
+    private User sender;
+    private User recipient;
     private String message;
     private String time;
 
     public Message() {}
 
-    public String getSender() {
+    public User getSender() {
         return sender;
     }
 
-    public String getRecipient() {
+    public User getRecipient() {
         return recipient;
     }
 
@@ -25,11 +27,11 @@ public class Message {
         return time;
     }
 
-    public void setSender(String sender) {
+    public void setSender(User sender) {
         this.sender = sender;
     }
 
-    public void setRecipient(String recipient) {
+    public void setRecipient(User recipient) {
         this.recipient = recipient;
     }
 
@@ -37,7 +39,9 @@ public class Message {
         this.message = message;
     }
 
-    public void setTime(String time) {
-        this.time = now(time);
+    public void setTime() {
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        this.time = currentDateTime.format(formatter);
     }
 }

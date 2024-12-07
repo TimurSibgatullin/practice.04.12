@@ -14,8 +14,8 @@ public class User {
     public User(String nickname, String name, String mobilePhone, String password) {
         this.nickname = nickname;
         this.name = name;
-        this.mobilePhone = name;
-        this.password = name;
+        this.mobilePhone = mobilePhone;
+        this.password = password;
     }
 
     public void setName(String name) {

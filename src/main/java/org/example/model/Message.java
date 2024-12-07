@@ -11,6 +11,13 @@ public class Message {
 
     public Message() {}
 
+    public Message(User sender, User recipient, String message) {
+        this.sender = sender;
+        this.recipient = recipient;
+        this.message = message;
+        setTime();
+    }
+
     public User getSender() {
         return sender;
     }

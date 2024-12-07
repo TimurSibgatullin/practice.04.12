@@ -18,7 +18,6 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-}
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
@@ -47,6 +46,5 @@ public class User {
     public String getPassword() {
         return password;
     }
-
 }
 
